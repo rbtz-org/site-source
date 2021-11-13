@@ -18,4 +18,7 @@ import Title from './components/title.vue'
   justify-content: center;
   align-items: center;
 }
+::selection {
+    background-color: #ffe150;
+}
 </style>

@@ -1,0 +1,9 @@
+/* fontsEN: EBGaramond(roman/italic) */
+@font-face{
+    font-family: EBGaramomndRoman;
+    src: url(../fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: EBGaramomndItalic;
+    src: url(../fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf);
+}
