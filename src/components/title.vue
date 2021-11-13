@@ -4,6 +4,7 @@
         <!-- <button @click="updateStyle">Update</button> -->
         <button
             onclick="location.href = 'mailto:zhao_yanbo@outlook.com?subject=Hi!👋 I\'m...'"
+            tabindex="0"
         >Say Hi!👋</button>
     </header>
 </template>
@@ -19,7 +20,7 @@ export default {
     data() {
         return {
             fontsEN: ['EBGaramomndRoman', 'EBGaramomndItalic', 'Times New Roman'],
-            fontsCN: ['宋体', '黑体'],
+            fontsCN: ['Source Han Sans', 'Source Han Serif', '思源黑体', '思源宋体', '宋体', '黑体'],
 
             title: null,
             font: null,
@@ -34,11 +35,11 @@ export default {
                     title: 'Zhao Yanbo',
                     lang: 'en',
                 },
-                {
-                    id: 2,
-                    title: '赵彦博',
-                    lang: 'zh-cn',
-                }
+                // {
+                //     id: 2,
+                //     title: '赵彦博',
+                //     lang: 'zh-cn',
+                // }
             ],
         }
     },
@@ -106,6 +107,7 @@ export default {
 header {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 h1 {
     font-size: 4em;

@@ -7,5 +7,7 @@ import './assets/css/fonts.css'
 import './assets/css/reset.css'
 // 全局 CSS
 import './index.css'
+// import XP.css
+import "xp.css/dist/XP.css";
 
 createApp(App).mount('#app')
