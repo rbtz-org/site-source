@@ -2,15 +2,16 @@
     <header>
         <h1 :style="{ fontFamily: font }">{{ title }}</h1>
         <!-- <button @click="updateStyle">Update</button> -->
-        <button
-            onclick="location.href = 'mailto:zhao_yanbo@outlook.com?subject=Hi!👋 I\'m...'"
-            tabindex="0"
-        >Say Hi!👋</button>
+        <hiButton />
     </header>
 </template>
 <script>
+import hiButton from './hiButton.vue';
 export default {
     name: 'Title',
+    components: {
+        hiButton
+    },
     // props: {
     //     title: {
     //         type: String,
@@ -110,17 +111,15 @@ header {
     align-items: center;
 }
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.1px;
+    margin-left:3em;
+    margin-right:3em;
 }
 
 h1::selection {
     color: #3d3d3d;
-}
-
-button {
-    user-select: none;
 }
 </style>
